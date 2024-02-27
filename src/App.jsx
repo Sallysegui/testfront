@@ -30,7 +30,7 @@ const App = () => {
     console.log('submitting')
     console.log(formData)
     try {
-      const response = await axios.post('http://localhost:3000/api/test', formData);
+      const response = await axios.post('https://testsendback.onrender.com/api/test', formData);
       console.log(response.data);
       alert("Email sent!");
       // Optionally, you can handle success or display a message to the user
